@@ -51,9 +51,10 @@ function sortearAmigoSecreto() {
     return;
   }
   // Obtener un número pseudo aleatorio para seleccionar un amigo secreto
-    let numeroSorteado = Math.floor(Math.random() * listaDeAmigos.length)+1;
+    let numeroSorteado = Math.floor(Math.random() * listaDeAmigos.length);
+    //console.log(numeroSorteado);
     // De acuerdo al número sorteado, se resta uno para obtener el índice del amigo secreto
-    let amigoSorteado = listaDeAmigos[numeroSorteado-1];
+    let amigoSorteado = listaDeAmigos[numeroSorteado];
 
     let resultado = document.getElementById('resultado');
     resultado.innerHTML = '';
